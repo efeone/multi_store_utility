@@ -159,9 +159,9 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "multi_store_utility.event.get_events"
-# }
+override_whitelisted_methods = {
+	"erpnext.accounts.doctype.accounting_dimension.accounting_dimension.get_dimensions": "multi_store_utility.multi_store_utility.doc_events.accounting_dimension.get_dimensions"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
