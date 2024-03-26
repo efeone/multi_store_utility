@@ -3,24 +3,32 @@
  "allow_rename": 1,
  "autoname": "field:outlet_name",
  "creation": "2024-03-07 16:35:12.376685",
+ "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "outlet_information_section",
   "outlet_name",
+  "outlet_manager",
+  "contact_number",
   "details",
   "column_break_wwfs",
   "company",
+  "starting_date",
   "address_html",
+  "users_tab",
   "section_break_bajh",
-  "serial_numbers",
+  "users",
   "accounts",
-  "users"
+  "series_details_tab",
+  "documents_series_section",
+  "serial_numbers"
  ],
  "fields": [
   {
    "fieldname": "details",
-   "fieldtype": "Text",
-   "label": "Details"
+   "fieldtype": "Small Text",
+   "label": "Outlet Details"
   },
   {
    "fieldname": "column_break_wwfs",
@@ -28,7 +36,8 @@
   },
   {
    "fieldname": "section_break_bajh",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Users"
   },
   {
    "fieldname": "users",
@@ -46,6 +55,7 @@
    "fieldname": "outlet_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Outlet Name",
    "reqd": 1,
    "unique": 1
@@ -60,19 +70,59 @@
    "fieldname": "serial_numbers",
    "fieldtype": "Table",
    "label": "Serial Numbers",
-   "options": "Serial Number",
-   "reqd": 1
+   "options": "Serial Number"
   },
   {
    "fieldname": "accounts",
    "fieldtype": "Table",
    "label": "Accounts",
    "options": "Accounts"
+  },
+  {
+   "fieldname": "outlet_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Outlet Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "outlet_information_section",
+   "fieldtype": "Section Break",
+   "label": "Outlet Information"
+  },
+  {
+   "fieldname": "users_tab",
+   "fieldtype": "Tab Break",
+   "label": "Users and Accounts"
+  },
+  {
+   "fieldname": "series_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Series Details "
+  },
+  {
+   "fieldname": "documents_series_section",
+   "fieldtype": "Section Break",
+   "label": "Documents Series "
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contact Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "starting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Starting Date"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 10:47:39.872785",
+ "modified": "2024-03-26 09:02:14.862926",
  "modified_by": "Administrator",
  "module": "Multi Store Utility",
  "name": "Outlet",
@@ -92,7 +142,10 @@
    "write": 1
   }
  ],
+ "search_fields": "outlet_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "outlet_name",
+ "track_changes": 1
 }
