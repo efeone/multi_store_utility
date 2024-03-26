@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:outlet_name",
+ "autoname": "format:RFC-{outlet_name}",
  "creation": "2024-03-07 16:35:12.376685",
  "default_view": "List",
  "doctype": "DocType",
@@ -122,11 +122,11 @@
   }
  ],
  "links": [],
- "modified": "2024-03-26 09:02:14.862926",
+ "modified": "2024-03-26 11:39:17.567882",
  "modified_by": "Administrator",
  "module": "Multi Store Utility",
  "name": "Outlet",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
