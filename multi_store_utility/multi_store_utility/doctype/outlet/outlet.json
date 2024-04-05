@@ -16,6 +16,7 @@
   "company",
   "starting_date",
   "address_html",
+  "warehouse",
   "users_tab",
   "section_break_bajh",
   "users",
@@ -119,10 +120,16 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Starting Date"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
   }
  ],
  "links": [],
- "modified": "2024-03-26 11:39:17.567882",
+ "modified": "2024-04-05 11:11:04.478936",
  "modified_by": "Administrator",
  "module": "Multi Store Utility",
  "name": "Outlet",
