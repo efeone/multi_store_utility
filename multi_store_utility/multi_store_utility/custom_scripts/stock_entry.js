@@ -16,7 +16,7 @@ function set_stock_entry_type_filter(frm) {
   frm.set_query("stock_entry_type", () => {
     return {
       filters: {
-        name: ["in", ["Material Issue", "Material Receipt"]],
+        name: ["in", ["Material Issue", "Material Receipt", "Material Consumption for Manufacture"]],
       },
     };
   });
